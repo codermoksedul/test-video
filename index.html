@@ -39,7 +39,7 @@
       /* Player wrapper */
       .player-wrapper {
         width: 100%;
-        max-width: 992px;
+        max-width: 768px;
         padding: 16px;
       }
 
@@ -89,34 +89,8 @@
 
   <body>
     <div class="player-wrapper">
-      <div class="player-container">
-        <iframe
-          src="https://player.cdn.moksedul.dev/28581061-6917-4e0b-9c75-c94f38e76377"
-          style="width: 100%; aspect-ratio: 16/9; border: 0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope"
-          allowfullscreen
-        ></iframe>
+      <iframe src="https://player.cdn.moksedul.dev/d02ae9f0-a41a-4239-a49c-377d0b599220" style="width: 100%; aspect-ratio: 16/9; border: 0;" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
       </div>
     </div>
-
-    <script>
-      /* Disable right click */
-      document.addEventListener("contextmenu", (e) => e.preventDefault());
-
-      /* Disable common dev shortcuts */
-      document.addEventListener("keydown", (e) => {
-        if (
-          e.key === "F12" ||
-          (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
-          (e.ctrlKey && e.key === "U") ||
-          (e.ctrlKey && e.key === "S")
-        ) {
-          e.preventDefault();
-        }
-      });
-
-      /* Prevent drag */
-      document.addEventListener("dragstart", (e) => e.preventDefault());
-    </script>
   </body>
 </html>
